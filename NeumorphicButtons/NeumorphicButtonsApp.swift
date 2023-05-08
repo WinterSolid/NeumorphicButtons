@@ -11,7 +11,7 @@ import SwiftUI
 struct NeumorphicButtonsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NeumorphicView()
         }
     }
 }

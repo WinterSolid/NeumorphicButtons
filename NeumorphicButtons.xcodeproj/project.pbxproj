@@ -11,6 +11,7 @@
 		3AC9427B2A087D5700CA9B84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC9427A2A087D5700CA9B84 /* ContentView.swift */; };
 		3AC9427D2A087D5A00CA9B84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AC9427C2A087D5A00CA9B84 /* Assets.xcassets */; };
 		3AC942812A087D5A00CA9B84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AC942802A087D5A00CA9B84 /* Preview Assets.xcassets */; };
+		3AC942882A087E2B00CA9B84 /* NeumorphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC942872A087E2B00CA9B84 /* NeumorphicView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		3AC9427C2A087D5A00CA9B84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AC9427E2A087D5A00CA9B84 /* NeumorphicButtons.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NeumorphicButtons.entitlements; sourceTree = "<group>"; };
 		3AC942802A087D5A00CA9B84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3AC942872A087E2B00CA9B84 /* NeumorphicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				3AC942782A087D5700CA9B84 /* NeumorphicButtonsApp.swift */,
+				3AC942872A087E2B00CA9B84 /* NeumorphicView.swift */,
 				3AC9427A2A087D5700CA9B84 /* ContentView.swift */,
 				3AC9427C2A087D5A00CA9B84 /* Assets.xcassets */,
 				3AC9427E2A087D5A00CA9B84 /* NeumorphicButtons.entitlements */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AC9427B2A087D5700CA9B84 /* ContentView.swift in Sources */,
+				3AC942882A087E2B00CA9B84 /* NeumorphicView.swift in Sources */,
 				3AC942792A087D5700CA9B84 /* NeumorphicButtonsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
