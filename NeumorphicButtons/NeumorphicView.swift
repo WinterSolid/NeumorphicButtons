@@ -8,56 +8,40 @@
 import SwiftUI
 
 struct NeumorphicView: View {
-    
-    @State private var selectedItem: String = ""
-    
-    let textArray = ["1) HOME","2) GARAGE","3) CAR","4) OFFICE","5) OTHER"]
+    let offWhiteColor = Color(red: 236/255, green: 234/255, blue: 235/255)
+    let shadowColor = Color(red: 197/255, green: 197/255, blue: 197/255)
     var body: some View {
-        
         ZStack {
-            
-            Color(.lightGray).ignoresSafeArea()
-            
-            
-            RoundedRectangle(cornerRadius: 15)
-                .fill(
-                    Color(.lightGray)
-                        .shadow(.inner( color: .white.opacity(0.7), radius: 5, x: -5, y: -5))
-                        .shadow(.inner(color: Color(.lightGray).opacity(0.7), radius: 5, x: 5, y: 5))
-                )
-                .frame(width: 300, height: 300)
-                .overlay{
-                    
-                    VStack(spacing: 15) {
-                        
-                        ForEach(textArray.indices, id: \.self) {
-                            index in
+            offWhiteColor
+                .ignoresSafeArea()
+            VStack {
+                Text("WINTERSOLID STUDIOS")
+                    .font(.largeTitle)
+                
+                Button(action: {}){
+                    Image(systemName: "snowflake")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .padding(25)
+                        .foregroundColor(Color.red)
+                        .background(
+                            RoundedRectangle(cornerRadius: 20, style: .continuous)
+                                .fill(
+                                    .shadow(.inner(color: shadowColor,radius: 3, x:3, y: 3))
+                                    .shadow(.inner(color: .white, radius: 3, x: -3, y: -3))
+                                )
                             
-                            HStack {
-                                
-                                Circle()
-                                    .fill(Color(.lightGray))
-                                    .frame(width: 35, height: 35)
-                                    .shadow(color: .white, radius: 5, x: -5, y: -5)
-                                    .shadow(color: .gray.opacity(0.5),radius: 5, x: 5, y: 5)
-                                
-                                Text(textArray[index])
-                                    .foregroundColor(selectedItem == textArray[index] ? Color.black : Color(.lightGray))
-                                    .font(selectedItem == textArray[index] ?
-                                        .system(.title3).bold() : .system(.title3))
-                                    .padding(.leading, selectedItem == textArray[index] ? 20 : 10 )
-                                
-                                Spacer()
-                            }
-                        }
-                    }
-                    .padding()
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .padding()
+                                .foregroundColor(offWhiteColor))
+                    
                 }
+                
+            }
+            
         }
+        
     }
 }
+
 
 struct NeumorphicView_Previews: PreviewProvider {
     static var previews: some View {
