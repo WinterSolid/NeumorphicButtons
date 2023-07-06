@@ -2,7 +2,7 @@
 //  NeumorphicView.swift
 //  NeumorphicButtons
 //
-//  Created by Wintesolid Studios on 5/7/23.
+//  Created by Wintesolid studios on 5/7/23.
 //
 
 import SwiftUI
